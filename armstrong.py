@@ -1,5 +1,3 @@
-# Armstrong Number
-
 def armstrong(num):
     sum=0
     temp = num
