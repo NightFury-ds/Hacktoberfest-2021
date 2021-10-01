@@ -25,3 +25,21 @@ def fibonacci(nterms):
             nth = n1 + n2
             n1, n2 = n2, nth
             count += 1
+            
+# Palindrome
+
+def palindrome_str(string):
+    string = string.casefold()
+    revStr = reversed(string)
+    if list(string) == list(revStr):
+        print("The string is a Palindrome.")
+    else:
+        print("The string is not a Palindrome.")
+
+
+def palindrome_num(num):
+    res = str(num) == str(num)[::-1]
+    if res:
+        print("The number is a Palindrome.")
+    else:
+        print("The number is not a Palindrome.")
