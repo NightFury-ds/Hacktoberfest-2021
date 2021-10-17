@@ -6,9 +6,9 @@ def armstrong(num):
         sum += digit ** 3
         temp //= 10
     if num == sum:
-        print(num,"is an Armstrong number")
+        print(num, "is an Armstrong number")
     else:
-        print(num,"is not an Armstrong number")
+        print(num, "is not an Armstrong number")
 
 # Fibonacci Series
 def fibonacci(nterms):
