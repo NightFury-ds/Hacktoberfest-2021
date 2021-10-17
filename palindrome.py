@@ -8,7 +8,7 @@ def palindrome_str(string):
     else:
         print("The string is not a Palindrome.")
 
-
+# We can't use function overloading 
 def palindrome_num(num):
     res = str(num) == str(num)[::-1]
     if res:
