@@ -1,12 +1,17 @@
 # Palindrome
-n=int(input("Enter number:"))
-temp=n
-rev=0
-while(n>0):
-    dig=n%10
-    rev=rev*10+dig
-    n=n//10
-if(temp==rev):
-    print("The number is a palindrome!")
-else:
-    print("The number isn't a palindrome!")
+
+def palindrome_str(string):
+    string = string.casefold()
+    revStr = reversed(string)
+    if list(string) == list(revStr):
+        print("The string is a Palindrome.")
+    else:
+        print("The string is not a Palindrome.")
+
+
+def palindrome_num(num):
+    res = str(num) == str(num)[::-1]
+    if res:
+        print("The number is a Palindrome.")
+    else:
+        print("The number is not a Palindrome.")
